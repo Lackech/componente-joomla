@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.2.0" method="upgrade">
 
-	<name>COM_CONGRESO</name>
+	<name>com_congreso</name>
 	<!-- The following elements are optional and free of formatting constraints -->
 	<creationDate>Noviembre</creationDate>
 	<author>Alejandro Chacon</author>
@@ -45,7 +45,14 @@
 
 	<administration>
 		<!-- Administration Menu Section -->
-		<menu link='index.php?option=com_congreso'>COM_CONGRESO_MENU</menu>
+		<menu link="index.php?option=com_congreso">Recursos congresos</menu>
+		<submenu>
+			<!--<menu link="option=com_congreso">Congresos</menu>-->
+			<menu view="congresos">Congresos</menu>
+			<!--<menu link="com_categories&amp;extension=com_congreso">Categorias</menu>-->
+			<menu view="congresocats">Categorias</menu>
+
+		</submenu>
 		<!-- Administration Main File Copy Section -->
 		<!-- Note the folder attribute: This attribute describes the folder
 			to copy FROM in the package to install therefore files copied
